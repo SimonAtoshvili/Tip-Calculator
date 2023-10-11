@@ -1,0 +1,271 @@
+.container {
+    width: 100%;
+    height: 120vh;
+    background-color: #c5e4e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #3D6666;
+    font-size: 24px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.heading {
+    font-size: 24px;
+    letter-spacing: 13px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #3D6666;
+}
+
+.inputs {
+    width: 50%;
+    background-color: inherit;
+    padding: 20px;
+}
+
+label {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #5E7A7D;
+}
+
+.dollar,
+.user {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #f3f9fa;
+    padding: 10px;
+    background-color: #f3f9fa;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#bill,
+#people_number {
+    width: 80%;
+    background-color: #f3f9fa;
+    outline: none;
+    border: none;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+    color: #00474b;
+}
+
+input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.fa-solid {
+    color: #9ebbbd;
+    font-size: 24px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50px;
+    background-color: #00474b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+section div:nth-child(6) {
+    border: 2px solid #f3f9fa;
+    background-color: #f3f9fa;
+}
+
+#custom {
+    width: 100%;
+    background-color: #f3f9fa;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#custom::placeholder {
+    color: #547878;
+}
+
+.outputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #00474b;
+}
+
+.tip,
+.total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip {
+    margin-bottom: 50px;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#tip_output,
+#total_output {
+    color: #26c2ae;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+span {
+    color: #7f9d9f;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #26c2ae;
+    color: #00474b;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.dollar:hover,
+.user:hover {
+    cursor: pointer;
+    border-color: #26c2ae;
+}
+
+section div:nth-child(6):hover {
+    background-color: #f3f9fa;
+    border-color: #26c2ae;
+}
+
+section div:hover {
+    background-color: #9fe8df;
+    color: #00474b;
+    cursor: pointer;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #9fe8df;
+}
+
+.clicked {
+    background-color: #26c2ae;
+}
+
+
+
+@media(max-width: 1160px) {
+    .content {
+        width: 80%;
+    }
+
+    .content {
+        padding: 25px;
+    }
+
+    .outputs {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 720px) {
+    .content {
+        width: 90%;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .outputs {
+        padding: 20px;
+    }
+
+    .inputs {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 530px) {
+    .container {
+        height: 170vh;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    section div {
+        width: 45%;
+    }
+
+    .inputs,
+    .outputs {
+        width: 100%;
+    }
+
+    button {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 375px) {
+    .content {
+        width: 98%;
+        padding: 8px;
+    }
+}
